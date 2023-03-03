@@ -27,10 +27,10 @@ namespace MissionLoader {
         }
 
         public static void Spawn () {
-            if (instance == null) {
-                SceneReady?.Invoke ();
-                instance = new GameObject ("NodeSpawner", typeof (NodeSpawner));
-            }
+            if (instance != null) return;
+            
+            SceneReady?.Invoke ();
+            instance = new GameObject ("NodeSpawner", typeof (NodeSpawner));
         }
 
         public static void ReadyNodes (List<NodeFactoryDatum> newNodes) {

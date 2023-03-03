@@ -3,16 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionLoader", "MissionLoader.csproj", "{0F7F3E08-A4E8-42A0-A2B7-FB2FCC72FFAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MissionLoader", "MissionLoader.csproj", "{0F7F3E08-A4E8-42A0-A2B7-FB2FCC72FFAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Export|Any CPU = Export|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0F7F3E08-A4E8-42A0-A2B7-FB2FCC72FFAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F7F3E08-A4E8-42A0-A2B7-FB2FCC72FFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7F3E08-A4E8-42A0-A2B7-FB2FCC72FFAC}.Export|Any CPU.ActiveCfg = Export|Any CPU
+		{0F7F3E08-A4E8-42A0-A2B7-FB2FCC72FFAC}.Export|Any CPU.Build.0 = Export|Any CPU
 		{0F7F3E08-A4E8-42A0-A2B7-FB2FCC72FFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F7F3E08-A4E8-42A0-A2B7-FB2FCC72FFAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
