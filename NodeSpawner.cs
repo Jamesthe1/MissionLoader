@@ -33,6 +33,10 @@ namespace MissionLoader {
             instance = new GameObject ("NodeSpawner", typeof (NodeSpawner));
         }
 
+        /// <summary>
+        /// Readies nodes to be spawned in mission select
+        /// </summary>
+        /// <param name="newNodes"></param>
         public static void ReadyNodes (List<NodeFactoryDatum> newNodes) {
             datums.AddRange (newNodes);
 
