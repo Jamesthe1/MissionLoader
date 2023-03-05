@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 
 namespace MissionLoader {
+    using Object = UnityEngine.Object;
+
     /// <summary>
     /// Because there is no access to Linq, this must suffice
     /// </summary>
@@ -45,6 +47,14 @@ namespace MissionLoader {
             for (int i = 0; i < klist.Count; i++)
                 dict.Add (klist[i], vlist[i]);
             return dict;
+        }
+
+        /// <summary>
+        /// Like "First", but for Unity object names
+        /// </summary>
+        /// <returns>The first item it can find, otherwise the default</returns>
+        public static T FirstByName<T> (this IEnumerable<Object> values, string name) where T : Object {
+            return values.FirstOf (o => o.name == name) as T;
         }
     }
 }

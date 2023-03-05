@@ -1,3 +1,6 @@
+# 1.1.0
+Add "FindAndReadyNodes"
+
 # 1.0.3
 Fix incomplete sentence in README
 
