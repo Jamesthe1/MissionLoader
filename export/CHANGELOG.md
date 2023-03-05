@@ -1,3 +1,6 @@
+# 1.0.3
+Fix incomplete sentence in README
+
 # 1.0.2
 Remove link in CHANGELOG when trying to type out README
 

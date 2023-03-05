@@ -5,7 +5,7 @@ A BepInEx plugin that loads modded missions for House of the Dying Sun.
 
 > NOTE: If your node depends on a mission from another mod, please add a `BepInDependency` to that mod in your plugin so that yours loads after it. This mod does not work well with cyclic dependencies.
 
-MissionLoader comes pre-packed with an event to detect when a scene is completely ready to spawn objects in. This is useful for 
+MissionLoader comes pre-packed with an event to detect when a scene is completely ready to spawn objects in. This is useful for loading objects from an AssetBundle, as well as spawning new GameObjects.
 1. At the top of your plugin script, add `using MissionLoader`.
 2. Create a method called `OnSceneReady` in your plugin class with no arguments.
 3. Inside this method:
