@@ -5,7 +5,7 @@ namespace MissionLoader {
     public static class NodeFactory {
         public static GameObject Create (NodeFactoryDatum nodeDatum, Transform parent = null) {
             string sortieName = nodeDatum.sortieTemplate.name;
-            string nodeName = "NODE_" + sortieName.Replace ("MISSION_", "");
+            string nodeName = sortieName.Replace ("MISSION_", "NODE_");
             GameObject newNode = new GameObject (nodeName);
             newNode.transform.parent = parent;
 
