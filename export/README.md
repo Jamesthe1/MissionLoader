@@ -11,8 +11,8 @@ MissionLoader comes pre-packed with an event to detect when a scene is completel
 3. Inside this method:
 	1. Add the line `NodeSpawner.SceneReady -= OnSceneReady`.
 	2. Load your AssetBundle(s) here, if you have any.
-	3. Create a `NodeFactoryDatum` with your `SortieTemplate`(s), a list of the GameObject names of the nodes you want this to connect to, and the position of your node on the map.
-	4. Call `NodeSpawner.ReadyNodes` and input a list of your `NodeFactoryDatum`(s).
+	3. Create one or more `NamedNodeDatum`s with the name of your `SortieTemplate`, a list of the GameObject names of the nodes you want this to connect to, and the name of a GameObject positioned where you want your node to be on the map.
+	4. Call `NodeSpawner.FindAndReadyNodes` and input a list of your `NamedNodeDatum`(s).
 4. In the `Awake` method of your plugin, add the line `NodeSpawner.SceneReady += OnSceneReady`.
 
 You should now have your node(s) spawn in the game with the connections you specified.
