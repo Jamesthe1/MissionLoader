@@ -15,6 +15,8 @@ namespace MissionLoader {
             this.connections = connections;
             if (posName == "")
                 this.posName = sortieName.Replace ("MISSION_", "POS_");
+            else
+                this.posName = posName;
         }
     }
 }
