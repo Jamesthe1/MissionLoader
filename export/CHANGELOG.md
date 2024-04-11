@@ -1,3 +1,6 @@
+# 1.1.1
+Bump version number for GitHub URL
+
 # 1.1.0
 Simplify node spawning
 
