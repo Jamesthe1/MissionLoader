@@ -65,6 +65,8 @@ namespace MissionLoader {
             ReadyNodes (nodes);
         }
 
+        // TODO: Add custom class that contains a sortietemplate class and a string list of node names
+
         private void Awake () {
             SpawnNodes ();
         }
