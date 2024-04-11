@@ -52,6 +52,6 @@
   </Target>
   
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition="'$(Configuration)|$(Platform)'=='Export|AnyCPU'">
-    <Exec Command="echo {&quot;name&quot;: &quot;$(AssemblyName)&quot;, &quot;description&quot;: &quot;$(Description)&quot;, &quot;version_number&quot;: &quot;$(Version)&quot;, &quot;dependencies&quot;: [], &quot;website_url&quot;: &quot;&quot;} &gt; export\manifest.json" />
+    <Exec Command="echo {&quot;name&quot;: &quot;$(AssemblyName)&quot;, &quot;description&quot;: &quot;$(Description)&quot;, &quot;version_number&quot;: &quot;$(Version)&quot;, &quot;dependencies&quot;: [], &quot;website_url&quot;: &quot;https://github.com/Jamesthe1/MissionLoader&quot;} &gt; export\manifest.json" />
   </Target>
 </Project>
