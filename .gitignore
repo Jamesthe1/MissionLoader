@@ -1,4 +1,5 @@
-export/
+export/plugins/
+export/manifest.json
 obj/
 *.zip
 .vs
